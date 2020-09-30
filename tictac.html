@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> Tic Tac </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="tic.js">
+    </script>
+<style>
+
+td{
+        border: 5px solid black;
+        width: 100px;
+        height: 100px;
+        font-size: 60px;
+        text-align: center;
+    }
+</style>
+    </head>
+    <body><div class="jumbotron jumbotron-fluid">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a Tic Tac game</p>
+        <hr class="my-4">
+        <p class="lead">
+          <a  id="reset"  onclick="reset()"   class="btn btn-primary btn-lg" href="#" role="button">Reset</a>
+        </p>
+      </div>
+
+<table align="center" border="1px solidblack" style="width: 400px; height: 400px; margin-bottom: 1cm; " >
+<tr>
+    <td id="r1c1" onclick="xo()" ondblclick="or1c1()">  </td>    <td id="r1c2" onclick="xr1c2()"  ondblclick="or1c2()"></td>  <td id="r1c3" onclick="xr1c3()" ondblclick="or1c3()" > </td>
+    </tr>
+
+    <tr>
+        <td id="r2c1" onclick="r2xo()" ondblclick="or2c1()">   </td>    <td id="r2c2" onclick="xr2c2()" ondblclick="or2c2()"></td>  <td id="r2c3" onclick="xr2c3()" ondblclick="or2c3()"> </td>
+    </tr>
+
+        <tr>
+            <td id="r3c1" onclick="r3xo()" ondblclick="or3c1()">  </td>    <td id="r3c2" onclick="xr3c2()" ondblclick="or3c2()"></td>  <td id="r3c3" onclick="xr3c3()" ondblclick="or3c3()"> </td>
+        </tr>
+            
+</table>
+<button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom: 1cm;" onclick="sub()">Submit</button>
+
+    </body>
+</html>
